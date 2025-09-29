@@ -104,9 +104,7 @@ void supprimer() {
             break;
         }
     }
-    if (i == nbr_contact) {
-        printf("Contact non trouve.\n");
-    }
+  
 }
 
 
@@ -142,4 +140,5 @@ int main() {
     } while (chois != 6);
 
     return 0;
+
 }
