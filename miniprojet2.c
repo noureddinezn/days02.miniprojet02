@@ -65,14 +65,14 @@ void rechercher() {
 
 
 void modifier() {
-    char nomCherche[50];
+    char nommodifier[50];
     int i;
 
     printf("Entrer le nom du contact a modifier: ");
-    scanf("%s", nomCherche);
+    scanf("%s", nommodifier);
 
     for (i = 0; i < nbr_contact; i++) {
-        if (strcmp(personne[i].nom, nomCherche) == 0) {
+        if (strcmp(personne[i].nom, nommodifier) == 0) {
             printf("Entrer le nouveau telephone: ");
             scanf("%s", personne[i].tele);
             printf("Entrer le nouvel email: ");
@@ -88,14 +88,14 @@ void modifier() {
 
 
 void supprimer() {
-    char nomCherche[50];
+    char nomsuprimer[50];
     int i;
 
     printf("Entrer le nom du contact a supprimer: ");
-    scanf("%s", nomCherche);
+    scanf("%s", nomsuprimer);
 
     for (i = 0; i < nbr_contact; i++) {
-        if (strcmp(personne[i].nom, nomCherche) == 0) {
+        if (strcmp(personne[i].nom, nomsuprimer) == 0) {
             for (int j = i; j < nbr_contact - 1; j++) {
                 personne[j] = personne[j + 1];
             }
@@ -142,3 +142,4 @@ int main() {
     return 0;
 
 }
+
